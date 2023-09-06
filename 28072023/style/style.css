@@ -1,0 +1,195 @@
+
+
+/*
+Margin: corresponde ao espaçamento externo da caixa em que o elemento está até
+os cantos da página.
+
+Padding: corresponde ao espaçamento interno do elemento em relação à sua própria caixa.
+
+Background: corresponde ao fundo, no qual é possível colocar uma cor
+sólida única ou em gradiente.
+
+Box-sizing: usar content-box não é uma boa prática, pois
+ao aumentarmos uma imagem, por exemplo, ou qualquer outro
+elemento, o que ocorre é que a CAIXA DE CONTEÚDO (em que 
+o elemento está) aumenta e não ele em si, causando possíveis 
+distorções. O ideal é utilizar box=sizing: border-box, que ao
+invés de distorcer, o border-box dá meio que um zoom na imagem,
+ou elemento.
+
+utilizar o site: https://cssgradient.io/
+*/
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*background: linear-gradient(235deg, rgba(88,84,152,1) 48%, rgba(91,169,230,1) 90%);*/
+}
+
+h1 {
+    font-size: 22px;
+    font-family: 'Mukta', sans-serif;
+    color:rgb(10,35,64,1);
+    line-height: 170%;  /*Define a altura da linha em relação à próxima */
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+    font-family: 'Mukta', sans-serif;
+}
+
+
+span {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+}
+
+p {
+    color: rgb(31, 179, 224);
+}
+
+#menu {
+    display: flex;              /*Selecionar o layout flexbox */
+    list-style: none;           /* Tirar as bolinhas de cada item da lista */
+    padding: 30px; 
+    justify-content: center;    /*Utilizado para alinhar*/      
+    margin-bottom: 25px;   
+}
+
+#menu a {
+    font-family: 'Mukta', sans-serif;               /* Aplicar uma fonte*/
+    color: rgb(10,35,64,1);                          /* Aplicar uma cor à fonte*/
+    font-size: 18px;                                /* Aumentar o tamanho da fonte*/
+    text-decoration: none;                          /* Tirar o sublinhado do link*/                                 
+    flex-direction: row;                            /* Alinhar um ao lado do outro */
+    margin: 20px;
+    text-transform: uppercase;                      /* Deixa o texto em maiúsculo*/       
+    font-weight: 700;      
+}
+
+/* Tag hover: essa tag é utilizada para quando 
+passar o mouse mudar a cor do texto*/
+#menu a:hover{
+    color:rgb(250, 250, 250);
+}
+
+header {
+    background: linear-gradient(90deg, rgba(94,163,252,1) 0%, rgba(62,109,210,1) 100%);
+    padding-bottom: 100px;
+}
+
+section {
+    background: black;
+}
+
+body {
+    background: black;
+}
+
+.apresentacao{ 
+    display: flex;
+
+}
+
+.right{
+    flex: 4;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.left{
+    flex: 6;
+}
+
+.left img{
+    margin-left: 30%;
+}
+
+.btn{
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.btnContact{
+    background: rgb(1,46,97,1);
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    
+}
+
+.btnContact:hover{
+    background: rgb(123,215,251,1);
+    color: white;
+}
+
+.containerServicos{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.itemServico1, .itemServico3, .itemServico6, .itemServico8{
+    border: 1px solid #3e6dd2;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px 25px;
+    text-align: center;
+    width: 20%;
+}
+
+.itemServico2, .itemServico4, .itemServico5, .itemServico7{
+    border: 1px solid #8fc0ff;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px 30px;
+    text-align: center;
+    width: 20%;
+}
+
+.containerServicos h2{
+  font-family:'Mukta', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+.containerServicos img{
+    width: 60px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover{
+    background: rgba(62, 109, 210, 0.5);
+    cursor: pointer;
+}
+
+.itemServico2:hover, .itemServico4:hover, .itemServico5:hover, .itemServico7:hover{
+    background: rgba(143, 192, 255, 0.5);
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,201 @@
+<!-- Declaração de que o documento é um HTML, marcando
+o ínicio do código -->
+<!DOCTYPE html>
+
+<!-- Tag html lang: especifica o idioma da página-->
+<html lang="pt-BR">
+
+
+<!-- Tag head: não é visualizado no corpo (body) da página, 
+armazena os metadados-->
+
+<head>
+
+    <!-- Metadado: considera um conjunto de caracteres presentes no 
+    idioma Português (acentuação, por exemplo)-->
+    <meta charset="UTF-8">
+
+    <!-- Metadado que possibilita a visualização em navegador de dispositivo móvel,
+    mantendo a escala -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Atributo href: usado para chamar algum arquivo -->
+    <!-- Referencia o arquivo CSS, colocar sempre na Tag head. -->    
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Tag title:  É o título da Guia, que fica na parte de cima do navegador-->
+    <title>Soluções em TI</title>
+
+</head>
+
+<!-- Tag body: Definir o corpo do documento(conteúdo a ser visualizado). -->
+<body>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;600&display=swap');
+    </style>
+
+    <!-- Tag header: seção para identificar o cabeçalho. -->
+    <header>
+
+            <!-- Tag nav ou menu: cria um seção de menu(navigation). -->
+            <nav>
+
+                <!-- Tag ul e ol: cria uma lista desordenada, enquanto a tag ol
+                cria uma lista ordenada. -->
+                <ul id="menu">
+
+                    <!-- Tag li: determina cada item. -->
+
+                    <!-- Tag a: utilizado para gerar um link, ou seja, possibilita 
+                    que o textp seja clicável. -->
+
+                    <!-- Tag href: utilizado para gerar uma referência do link, ou seja, determina
+                    o redirecionamento da página. -->
+                    <li><a href="#"> Início </a></li>
+                    <li><a href="sobremim.html"> Sobre mim </a></li>
+                    <li><a href="#servicos"> Soluções em ti  </a></li>
+                    <li><a href="contato.html"> Contato </a></li>
+
+                </ul>
+
+            </nav>
+
+    
+
+            <!-- Divisão em seções (partes da página) -->
+        
+
+            <!-- Divisão em parte menor, dentro de uma seção, identificada pela
+            palavra "apresentação" -->
+            <div class="apresentacao">
+
+                <!-- Tag img: inserir imagem na página -->
+                <!-- Width significa largura -->
+                <!-- Height significa altura -->
+                <!-- Alt: é usado para deixar a imagem com uma legenda -->
+
+                <div class="left">
+                    <img src="img/background.png" width="35%" alt="códigos de programação">
+                </div>
+
+                <!-- BANCO DE IMAGENS GRATUITO-->
+                <!-- ACESSAR O SITE: https://unsplash.com/-->
+                <!-- ACESSAR O SITE: https://br.freepik.com/-->
+
+                <div class="right">
+
+                    <span>Soluções tecnológicas em </span>
+                    <h1> Desenvolvimento Web </h1>
+                    <div>
+                        <button class="btn btnContact">Entre em contato</button>
+                    </div>
+                </div>
+
+           
+
+            </div>
+
+            <!-- O "h" é o título do corpo. A diferença do h1 para o h2 e etc, é o nível de importância,
+            onde o h1 é o mais importante e o h6 o menos importante. Então h1 é o título principal, o h2 é o subtítulo,
+            o h3 é o subtítulo do subtítulo e assim por diante. Podemos utilizar outro h1? Poder pode, mas não é 
+            indicado, porque o navegador te joga para o fim da fila dos sites(indexação). Então prcure usar só um.-->
+        
+         
+
+    </header>
+
+    <section id="servicos">
+
+        <h3 class="titulo">Assistência em redes de computadores</h3>
+
+        <div class="containerServicos">
+
+            <div class="itemServico1">
+
+                <img src="img/montagemPC/96px.png">
+                <h2>Montagem e manutenção<br> de computadores</h2>
+
+            </div>
+
+            <div class="itemServico2">
+
+                <img src="img/redes/96px.png">
+                <h2>Implementação e configuração<br> de redes</h2>
+
+            </div>
+
+            <div class="itemServico3">
+
+                <img src="img/configuracaoSO/96px.png">
+                <h2>Instalação e configuração de<br> sistemas operacionais</h2>
+
+            </div>
+
+            <div class="itemServico4">
+
+                <img src="img/SegurancaInformacao_64px.png">
+                <h2>Segurança da informação<br> e backup</h2>
+
+            </div>
+
+        </div>
+
+        <h3 class="titulo">Desenvolvimento e implementação de aplicativos</h3>
+        <div class="containerServicos">
+
+            <div class="itemServico5">
+
+                <img src="img/prototipacao/96px.png">
+                <h2>Prototipação de<br> aplicações</h2>
+
+            </div>
+
+            <div class="itemServico6">
+
+                <img src="img/bancoDeDados/96px.png">
+                <h2>Estruturação e administração <br>de banco de dados</h2>
+
+            </div>
+
+            <div class="itemServico7">
+
+                <img src="img/sistemaDesktop/96px.png">
+                <h2>Desenvolvimento de<br> sistemas Desktop</h2>
+
+            </div>
+
+            <div class="itemServico8">
+
+                <img src="img/desenvolverSite/96px.png">
+                <h2>Desenvolvimento e <br>hospedagem de sites</h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Tag hr: cria uma linha -->
+    <!-- <hr> --> 
+
+    <!--<h2> SOBRE MIM</h2>-->
+    <!--<h3> Portfólio | Desenvolvedor Breno Silva</h3>
+    <h4> Portfólio | Desenvolvedor Breno Silva</h4>    
+    <h5> Portfólio | Desenvolvedor Breno Silva</h5>
+    <h6> Portfólio | Desenvolvedor Breno Silva</h6>-->
+
+
+    <!-- Tag p: Representar o parágrafo -->
+    <!--<p>Olá, mundo!</p>-->
+
+    <!-- Tag footer: seção para indentificar o rofapé-->
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>
