@@ -20,7 +20,7 @@ armazena os metadados-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Atributo href: usado para chamar algum arquivo -->
-    <!-- Referencia o arquivo CSS, colocar sempre na Tag head. -->    
+    <!-- Referencia o arquivo CSS, colocar sempre na Tag head. -->
     <link rel="stylesheet" href="style/style.css">
 
     <!-- Tag title:  É o título da Guia, que fica na parte de cima do navegador-->
@@ -29,84 +29,151 @@ armazena os metadados-->
 </head>
 
 <!-- Tag body: Definir o corpo do documento(conteúdo a ser visualizado). -->
+
 <body>
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;600&display=swap');
     </style>
 
     <!-- Tag header: seção para identificar o cabeçalho. -->
+
     <header>
+        <!-- Início do menu -->
 
-            <!-- Tag nav ou menu: cria um seção de menu(navigation). -->
-            <nav>
+        <!-- Tag nav ou menu: cria um seção de menu(navigation). -->
+        <nav>
 
-                <!-- Tag ul e ol: cria uma lista desordenada, enquanto a tag ol
+            <!-- Tag ul e ol: cria uma lista desordenada, enquanto a tag ol
                 cria uma lista ordenada. -->
-                <ul id="menu">
+            <ul id="menu">
 
-                    <!-- Tag li: determina cada item. -->
+                <!-- Tag li: determina cada item. -->
 
-                    <!-- Tag a: utilizado para gerar um link, ou seja, possibilita 
+                <!-- Tag a: utilizado para gerar um link, ou seja, possibilita 
                     que o textp seja clicável. -->
 
-                    <!-- Tag href: utilizado para gerar uma referência do link, ou seja, determina
+                <!-- Tag href: utilizado para gerar uma referência do link, ou seja, determina
                     o redirecionamento da página. -->
-                    <li><a href="#"> Início </a></li>
-                    <li><a href="sobremim.html"> Sobre mim </a></li>
-                    <li><a href="#servicos"> Soluções em ti  </a></li>
-                    <li><a href="contato.html"> Contato </a></li>
+                <li><a href="#"> Início </a></li>
+                <li><a href="#sobremim"> Sobre mim </a></li>
+                <li><a href="#servicos"> Soluções em ti </a></li>
+                <li><a href="contato.html"> Contato </a></li>
 
-                </ul>
+            </ul>
 
-            </nav>
+        </nav>
+        <!-- Fim do menu -->
 
-    
 
-            <!-- Divisão em seções (partes da página) -->
-        
+        <!-- Divisão em seções (partes da página) -->
 
-            <!-- Divisão em parte menor, dentro de uma seção, identificada pela
+
+        <!-- Divisão em parte menor, dentro de uma seção, identificada pela
             palavra "apresentação" -->
-            <div class="apresentacao">
 
-                <!-- Tag img: inserir imagem na página -->
-                <!-- Width significa largura -->
-                <!-- Height significa altura -->
-                <!-- Alt: é usado para deixar a imagem com uma legenda -->
+        <!-- Início da seção de apresentação -->
+        <div class="apresentacao">
 
-                <div class="left">
-                    <img src="img/background.png" width="35%" alt="códigos de programação">
-                </div>
+            <!-- Tag img: inserir imagem na página -->
+            <!-- Width significa largura -->
+            <!-- Height significa altura -->
+            <!-- Alt: é usado para deixar a imagem com uma legenda -->
 
-                <!-- BANCO DE IMAGENS GRATUITO-->
-                <!-- ACESSAR O SITE: https://unsplash.com/-->
-                <!-- ACESSAR O SITE: https://br.freepik.com/-->
-
-                <div class="right">
-
-                    <span>Soluções tecnológicas em </span>
-                    <h1> Desenvolvimento Web </h1>
-                    <div>
-                        <button class="btn btnContact">Entre em contato</button>
-                    </div>
-                </div>
-
-           
-
+            <div class="left">
+                <img src="img/background.png" width="35%" alt="códigos de programação">
             </div>
 
-            <!-- O "h" é o título do corpo. A diferença do h1 para o h2 e etc, é o nível de importância,
+            <!-- BANCO DE IMAGENS GRATUITO-->
+            <!-- ACESSAR O SITE: https://unsplash.com/-->
+            <!-- ACESSAR O SITE: https://br.freepik.com/-->
+
+            <div class="right">
+
+                <span>Soluções tecnológicas em </span>
+                <h1> Desenvolvimento Web </h1>
+                <div>
+                    <button class="btn btnContact">Entre em contato</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- O "h" é o título do corpo. A diferença do h1 para o h2 e etc, é o nível de importância,
             onde o h1 é o mais importante e o h6 o menos importante. Então h1 é o título principal, o h2 é o subtítulo,
             o h3 é o subtítulo do subtítulo e assim por diante. Podemos utilizar outro h1? Poder pode, mas não é 
             indicado, porque o navegador te joga para o fim da fila dos sites(indexação). Então prcure usar só um.-->
-        
-         
 
+
+        <!-- Fim da seção de apresentação -->
     </header>
+
+    <section id="sobremim">
+
+        <h3 class="titulo titulo1">Sobre mim</h3>
+        <div class="containerSobreMim">
+
+            <div class="left">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim in deleniti omnis odio doloribus
+                    similique voluptate praesentium quos illo rerum! Quas porro aliquid eligendi culpa, voluptates
+                    soluta cupiditate dolore perspiciatis.
+                </p>
+            </div>
+
+            <div class="right">
+                <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/VyFIdtI-7Bo?si=uSJ-fe8exxsgIIhm"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>-->
+
+                <!--<video controls autoplay width="540" height="315">
+                    <source src="img/DesfileNaFavela.mp4">
+                </video>-->
+
+                <div class="socialMedia1">
+
+                    <div class="what">
+                        <a href="https://api.whatsapp.com/send?phone=5511953880178" target="_blank">
+                            <img src="img/redesSociais/whatsapp100px.png">
+                        </a>
+                    </div>
+
+                    <div class="git"> <!-- Tag target _blank: serve para abrir o link em outra página-->
+                        <a href="https://github.com/breniru" target="_blank">
+                            <img src="img/redesSociais/github100px.png">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="socialMedia2">
+
+                    <div class="link">
+                        <a href="https://linkedin.com/in/breno-silva-6a813a268" target="_blank">
+                            <img src="img/redesSociais/linkedin96px.png">
+                        </a>
+                    </div>
+
+                    <div class="mail">
+                        <a href="mailto:breno10sp14@gmail.com">
+                            <img src="img/redesSociais/email100px.png">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
 
     <section id="servicos">
 
+        <!-- Início da seção de serviços em redes de compuradores -->
         <h3 class="titulo">Assistência em redes de computadores</h3>
 
         <div class="containerServicos">
@@ -140,7 +207,9 @@ armazena os metadados-->
             </div>
 
         </div>
+        <!-- Fim da seção de serviços em redes de computadores -->
 
+        <!-- Início da seção de serviços em desenvolvimento -->
         <h3 class="titulo">Desenvolvimento e implementação de aplicativos</h3>
         <div class="containerServicos">
 
@@ -173,12 +242,14 @@ armazena os metadados-->
             </div>
 
         </div>
+        <!-- Fim da seção de serviços em desenvolvimento -->
+
 
     </section>
 
 
     <!-- Tag hr: cria uma linha -->
-    <!-- <hr> --> 
+    <!-- <hr> -->
 
     <!--<h2> SOBRE MIM</h2>-->
     <!--<h3> Portfólio | Desenvolvedor Breno Silva</h3>
@@ -191,10 +262,13 @@ armazena os metadados-->
     <!--<p>Olá, mundo!</p>-->
 
     <!-- Tag footer: seção para indentificar o rofapé-->
+
+    <!-- Início do rodapé -->
     <footer>
 
 
     </footer>
+    <!-- Fim do rodapé -->
 
 </body>
 

@@ -172,12 +172,17 @@ body {
 
 .titulo{
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 25px;
     font-family: 'Mukta', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
+}
+
+.titulo1{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .itemServico1:hover, .itemServico3:hover, .itemServico6:hover, .itemServico8:hover{
@@ -192,4 +197,56 @@ body {
 
 html{
     scroll-behavior: smooth;
+}
+
+.containerSobreMim {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.containerSobreMim .left {
+    padding-right: 25px;
+    padding-left: 25px;
+    flex: 4;
+}
+
+.containerSobreMim .right {
+    flex: 6;
+}
+
+.containerSobreMim .right video {
+    border: 2px solid white;
+}
+
+.socialMedia1{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    
+}
+
+.git img {
+    width: 80px;
+    margin-top: 12px;
+}
+
+.what img{
+    width: 100px; 
+}
+
+.socialMedia2{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.link img {
+    width: 75px;
+    margin-left: 12px;
+}
+
+.mail img {
+    width: 80px;
+    margin-left: 12px;
 }
