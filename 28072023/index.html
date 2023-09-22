@@ -21,11 +21,16 @@ armazena os metadados-->
 
     <!-- Atributo href: usado para chamar algum arquivo -->
     <!-- Referencia o arquivo CSS, colocar sempre na Tag head. -->
-    <link rel="stylesheet" href="style/style.css">
+
 
     <!-- Tag title:  É o título da Guia, que fica na parte de cima do navegador-->
     <title>Soluções em TI</title>
 
+    <!-- Inclução do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <!-- Tag body: Definir o corpo do documento(conteúdo a ser visualizado). -->
@@ -36,38 +41,49 @@ armazena os metadados-->
         @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;600&display=swap');
     </style>
 
+    <!-- Início do menu -->
+    <!-- Tag nav ou menu: cria um seção de menu(navigation). -->
+
+    <!-- Tag ul e ol: cria uma lista desordenada, enquanto a 
+        tag ol cria uma lista ordenada. -->
+
+    <!-- Tag li: determina cada item. -->
+
+    <!-- Tag a: utilizado para gerar um link, ou seja,
+        possibilita que o textp seja clicável. -->
+
+    <!-- Tag href: utilizado para gerar uma referência do link,
+        ou seja, determina o redirecionamento da página. -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navColor" id="navbarNav">
+                <ul class="navbar-nav" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremim">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Soluções em TI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fim do menu -->
+
+
     <!-- Tag header: seção para identificar o cabeçalho. -->
-
     <header>
-        <!-- Início do menu -->
-
-        <!-- Tag nav ou menu: cria um seção de menu(navigation). -->
-        <nav>
-
-            <!-- Tag ul e ol: cria uma lista desordenada, enquanto a tag ol
-                cria uma lista ordenada. -->
-            <ul id="menu">
-
-                <!-- Tag li: determina cada item. -->
-
-                <!-- Tag a: utilizado para gerar um link, ou seja, possibilita 
-                    que o textp seja clicável. -->
-
-                <!-- Tag href: utilizado para gerar uma referência do link, ou seja, determina
-                    o redirecionamento da página. -->
-                <li><a href="#"> Início </a></li>
-                <li><a href="#sobremim"> Sobre mim </a></li>
-                <li><a href="#servicos"> Soluções em ti </a></li>
-                <li><a href="contato.html"> Contato </a></li>
-
-            </ul>
-
-        </nav>
-        <!-- Fim do menu -->
-
-
-        <!-- Divisão em seções (partes da página) -->
-
+        <!-- tag seccion: Divisão em seções (partes da página) -->
 
         <!-- Divisão em parte menor, dentro de uma seção, identificada pela
             palavra "apresentação" -->
@@ -90,10 +106,13 @@ armazena os metadados-->
 
             <div class="right">
 
-                <span>Soluções tecnológicas em </span>
-                <h1> Desenvolvimento Web </h1>
+                <span>Soluções tecnológicas em Desenvolvimento </span>
+                <h1> Web e Redes de computadores</h1>
                 <div>
-                    <button class="btn btnContact">Entre em contato</button>
+                    <a href="index.html#contato">
+                        <button class="btn btnContact">Entre em contato</button>
+                    </a>
+
                 </div>
             </div>
 
@@ -110,12 +129,15 @@ armazena os metadados-->
         <!-- Fim da seção de apresentação -->
     </header>
 
+    <!-- Início da seção sobre mim -->
     <section id="sobremim">
 
         <h3 class="titulo titulo1">Sobre mim</h3>
         <div class="containerSobreMim">
 
             <div class="left">
+                <h2>Breno Silva</h2>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim in deleniti omnis odio doloribus
                     similique voluptate praesentium quos illo rerum! Quas porro aliquid eligendi culpa, voluptates
                     soluta cupiditate dolore perspiciatis.
@@ -146,6 +168,13 @@ armazena os metadados-->
                             <img src="img/redesSociais/github100px.png">
                         </a>
                     </div>
+
+                    <div class="git"> <!-- Tag target _blank: serve para abrir o link em outra página-->
+                        <a href="https://instagram.com/ymfbrenin?igshid=MzMyNGUyNmU2YQ==" target="_blank">
+                            <img src="img/redesSociais/instagram96px.png">
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="socialMedia2">
@@ -161,6 +190,7 @@ armazena os metadados-->
                             <img src="img/redesSociais/email100px.png">
                         </a>
                     </div>
+
                 </div>
 
             </div>
@@ -168,13 +198,13 @@ armazena os metadados-->
 
 
     </section>
-
+    <!-- Fim da seção sobre mim -->
 
 
     <section id="servicos">
 
         <!-- Início da seção de serviços em redes de compuradores -->
-        <h3 class="titulo">Assistência em redes de computadores</h3>
+        <h3 class="titulo tituloServicos1">Assistência em redes de computadores</h3>
 
         <div class="containerServicos">
 
@@ -210,7 +240,7 @@ armazena os metadados-->
         <!-- Fim da seção de serviços em redes de computadores -->
 
         <!-- Início da seção de serviços em desenvolvimento -->
-        <h3 class="titulo">Desenvolvimento e implementação de aplicativos</h3>
+        <h3 class="titulo tituloServicos2">Desenvolvimento e implementação de aplicativos</h3>
         <div class="containerServicos">
 
             <div class="itemServico5">
@@ -257,19 +287,245 @@ armazena os metadados-->
     <h5> Portfólio | Desenvolvedor Breno Silva</h5>
     <h6> Portfólio | Desenvolvedor Breno Silva</h6>-->
 
+    <section id="certificacoes">
+        <h3 class="titleCertHab principal">Certificações e Habilidades</h3>
 
-    <!-- Tag p: Representar o parágrafo -->
-    <!--<p>Olá, mundo!</p>-->
+        <div class="containerCertificacoes">
+
+
+            <div class="textCertificacoes">
+                <h3 class="titleCertHab titleCerti ">Certificações</h3>
+
+                <p>Assistente de Suporte e Manutenção de Computadores</p>
+                <p>Assistente de Operação de Redes de Computadores</p>
+                <p>IT Essetials</p>
+                <p>Cybersecurity Essentials</p>
+                <p>Networking Essentials</p>
+                <p>NDG Linux Unhatched</p>
+
+
+
+            </div>
+
+            <div class="selos">
+                <h3 class="titleCertHab cisco"> Selos Cisco</h3>
+
+                <div class="selos2">
+                    <div>
+                        <img src="img/selosEHab/it-essentials.png">
+                    </div>
+
+                    <div>
+                        <img src="img/selosEHab/cybersecurity.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="containerSelos">
+           
+            <div class="habilidades">
+                <h3 class="titleCertHab hab">Habilidades</h3>
+                
+                <div class="habIcons">
+
+                    <div class="html">
+                        <img src="img/habilidades/html144px.png" width="120px" height="120px">
+                    </div>
+
+                    <div class="css">
+                        <img src="img/habilidades/css144px.png" width="120px" height="120px">
+                    </div>
+
+                    <div class="js">
+                        <img src="img/habilidades/js144px.png" width="120px" height="120px">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Início da seção contato -->
+    <section id="contato">
+
+        <div class="containerContato">
+
+            <form name="formularioContato">
+                <h2 style="font-size:27px;" class="formTitle">Entre em contato</h2>
+
+                <div class="displayContato">
+
+                    <!-- tag Label: rótulo do input; observação: o nome 
+                    que dermos para o label, temos que adicionar a mesma coisa
+                    no atributo "name" dentro do input.-->
+                    <div class="dados">
+                        <label for="nome">Nome: </label>
+
+                        <!-- tag input: entrada de dados; Atributo placeholder: deixa 
+                        uma instrução dentro da caixa; Atributo required: é um atributo 
+                        usado para deixar um campo obrigatório; O id é usado para que 
+                        toda vez que digitarmos um nome, ele receber uma identificação.-->
+                        <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+                        <br>
+
+                        <label for="celular">Celular: </label>
+                        <input type="tel" id="idFone" placeholder="(99) 99999-9999" name="celular" />
+                        <br>
+
+
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="idEmail" placeholder="seuemail@email.com" required="required"
+                            name="email" />
+
+                    </div>
+
+                    <div class="mensagem">
+                        <!-- tag textarea: usado para criar uma caixa de texto-->
+                        <label>Deixe sua mensagem: </label>
+                        <textarea></textarea>
+                        <br>
+
+                        <input type="submit" class="enviar" onclick="enviarMensagem();" value="Enviar mensagem" />
+
+                    </div>
+            </form>
+
+            <div class="imgContato">
+                <img src="img/contato.png">
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+    </section>
+    <!-- Fim da seção contato -->
+
+
 
     <!-- Tag footer: seção para indentificar o rofapé-->
-
     <!-- Início do rodapé -->
-    <footer>
+    <div class="container my-5">
+        <!-- Footer -->
+        <footer class="text-center text-white">
+            <!-- Grid container -->
+            <div class="container">
+                <!-- Section: Links -->
+                <section class="foot">
+                    <!-- Grid row-->
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#" class="text-white">Início</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
 
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#sobremim" class="text-white">Sobre Mim </a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
 
-    </footer>
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#servicos" class="text-white">Soluções em TI</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#contato" class="text-white">Contato</a>
+                            </h6>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                <hr class="my-5" />
+
+                <!-- Section: Text -->
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                                distinctio earum repellat quaerat voluptatibus placeat nam,
+                                commodi optio pariatur est quia magnam eum harum corrupti
+                                dicta, aliquam sequi voluptate quas.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Section: Text -->
+
+                <!-- Section: Social -->
+                <section class="text-center mb-5">
+                    <a href="https://api.whatsapp.com/send?phone=5511953880178" target="_blank" class="text-white me-4">
+                        <i class="fa-brands fa-whatsapp fa-2xl designIcon"></i>
+                    </a>
+                    <a href="mailto:breno10sp14@gmail.com" target="_blank" class="text-white me-4 designicon">
+                        <i class="fa-solid fa-envelope fa-2xl designIcon"></i>
+                    </a>
+                    <a href="https://instagram.com/ymfbrenin?igshid=MzMyNGUyNmU2YQ==" target="_blank"
+                        class="text-white me-4">
+                        <i class="fab fa-instagram fa-2xl designIcon"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/breno-silva-6a813a268" target="_blank" class="text-white me-4">
+                        <i class="fab fa-linkedin fa-2xl designIcon"></i>
+                    </a>
+                    <a href="https://github.com/breniru" target="_blank" class="text-white me-4">
+                        <i class="fab fa-github fa-2xl designIcon"></i>
+                    </a>
+                </section>
+                <!-- Section: Social -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2023 Copyright:
+                <a class="text-white copy" href="https://github.com/breniru" target="_blank">Desenvolvido por Breno
+                    Silva</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- End of .container -->
     <!-- Fim do rodapé -->
 
+
+    <script src="js/script.js"></script>
+    <!-- Inclusão do Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7e25f41fb5.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
